@@ -1,0 +1,268 @@
+/* Variabel warna utama untuk menjaga konsistensi desain website */
+:root {
+    --primary: #2563eb;
+    --secondary: #06b6d4;
+    --dark: #0f172a;
+    --muted: #64748b;
+    --light: #f8fafc;
+    --card: #ffffff;
+    --radius: 24px;
+}
+
+/* Pengaturan global agar scroll halus dan font konsisten */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+/* Navbar transparan dengan efek glass agar terlihat modern */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.86);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #67e8f9 !important;
+}
+
+/* Hero section menggunakan gradient dan pola radial */
+.hero-section {
+    min-height: 100vh;
+    padding: 120px 0 80px;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(6, 182, 212, 0.35), transparent 28%),
+        radial-gradient(circle at 80% 15%, rgba(37, 99, 235, 0.42), transparent 24%),
+        linear-gradient(135deg, #0f172a 0%, #1e3a8a 58%, #164e63 100%);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #67e8f9, #bfdbfe, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.shadow-soft {
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.16);
+}
+
+/* Kartu foto diri pada area hero */
+.profile-card {
+    position: relative;
+    width: min(360px, 88vw);
+    padding: 14px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+
+.profile-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1.12;
+    object-fit: cover;
+    border-radius: 26px;
+}
+
+.profile-status {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: #ffffff;
+    font-weight: 600;
+    color: var(--dark);
+    white-space: nowrap;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.18);
+}
+
+/* Spasi standar untuk setiap section */
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-label {
+    color: var(--primary);
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.section-title {
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+}
+
+/* Box informasi singkat pada bagian profil */
+.info-box,
+.content-card,
+.portfolio-card,
+.contact-card {
+    border-radius: var(--radius);
+    background: var(--card);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.09);
+}
+
+.info-box {
+    padding: 22px 18px;
+    border: 1px solid #e2e8f0;
+}
+
+.info-box h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 0.35rem;
+}
+
+.info-box p {
+    color: var(--muted);
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.content-card {
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Styling list agar lebih menarik dan mudah dibaca */
+.skill-list,
+.timeline-list {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+.skill-list li,
+.timeline-list li {
+    margin-bottom: 0.9rem;
+    color: #334155;
+}
+
+.skill-list li::marker {
+    color: var(--secondary);
+}
+
+.timeline-list li::marker {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.table thead th {
+    background: #eff6ff;
+    color: #1e40af;
+}
+
+/* Kartu portfolio dengan animasi hover */
+.portfolio-card {
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 26px 60px rgba(15, 23, 42, 0.15);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.portfolio-card h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.portfolio-card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+/* Section kontak memakai latar gelap agar menjadi call-to-action */
+.contact-section {
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.92)),
+        url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=80') center/cover;
+}
+
+.contact-card {
+    padding: 48px 30px;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+}
+
+/* Tombol back to top akan ditampilkan oleh JavaScript saat halaman discroll */
+.back-to-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 16px 35px rgba(37, 99, 235, 0.35);
+    z-index: 1050;
+}
+
+.back-to-top.show {
+    display: flex;
+}
+
+/* Media query untuk menyesuaikan tampilan pada layar kecil */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 105px;
+    }
+
+    .section-padding {
+        padding: 64px 0;
+    }
+
+    .display-4 {
+        font-size: 2.35rem;
+    }
+
+    .content-card,
+    .contact-card {
+        padding: 24px;
+    }
+}
