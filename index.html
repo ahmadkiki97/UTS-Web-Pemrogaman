@@ -3,300 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website Curriculum Vitae dan portfolio pribadi Riski Kurniawan untuk UTS Pemrograman Web I.">
-    <title>CV HAMKA Kurniawan | Portfolio Pribadi</title>
+    <meta name="description" content="Website CV kelompok GROUP 10 Universitas Siber Asia untuk UTS Pemrograman Web I.">
+    <title>GROUP 10 | UTS Pemrograman Web I</title>
 
-    <!-- Bootstrap 5 CDN untuk layout responsive dan komponen modern -->
+    <!-- Bootstrap 5 membantu membuat layout responsif tanpa framework berat. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Google Fonts untuk tipografi yang lebih rapi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- File CSS buatan sendiri -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarCV" data-bs-offset="90" tabindex="0">
-    <!-- Navbar utama untuk navigasi antar bagian halaman -->
-    <nav id="navbarCV" class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+<body class="landing-page">
+    <!-- Navbar pembuka dibuat ringkas agar perhatian tertuju pada identitas kelompok. -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav" aria-label="Navigasi utama">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">Riski Kurniawan</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCV" aria-controls="menuCV" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menuCV">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#profil">Profil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
-                </ul>
-            </div>
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                <img src="images/logo-unsia.png" class="nav-logo" alt="Logo Universitas Siber Asia">
+                <span>GROUP 10</span>
+            </a>
+            <a class="btn btn-sm btn-outline-light rounded-pill px-3" href="anggota.html">Daftar Anggota</a>
         </div>
     </nav>
 
-    <!-- Hero section berisi foto diri dan ringkasan CV -->
-    <header id="home" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center gy-5">
-                <div class="col-lg-7 text-center text-lg-start">
-                    <p class="badge rounded-pill bg-info-subtle text-info-emphasis px-3 py-2 mb-3">CV / Portfolio Pribadi</p>
-                    <h1 class="display-4 fw-bold text-white mb-3">Halo, saya <span class="text-gradient">HAMKA Kurniawan</span></h1>
-                    <h2 class="h4 text-light fw-semibold mb-4">Mahasiswa Informatika dengan minat pada Web Development, Quality Control, dan manufaktur.</h2>
-                    <p class="lead text-white-75 mb-4">
-                        Saya membangun halaman ini sebagai <strong>tugas UTS Pemrograman Web I</strong> dengan HTML, CSS, JavaScript, dan Bootstrap 5.
-                        Fokus saya adalah membuat tampilan yang <em>modern</em>, responsive, informatif, serta mudah dibaca.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#portfolio" class="btn btn-primary btn-lg shadow-soft">Lihat Portfolio</a>
-                        <a href="#kontak" class="btn btn-outline-light btn-lg">Hubungi Saya</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <div class="profile-card mx-auto">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" class="img-fluid profile-photo" alt="Foto diri profesional Riski Kurniawan">
-                        <div class="profile-status">
-                            <span class="status-dot"></span> Siap Berkembang
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <main>
-        <!-- Bagian profil berisi deskripsi diri minimal dua paragraf -->
-        <section id="profil" class="section-padding bg-light">
-            <div class="container">
-                <div class="row align-items-center gy-4">
-                    <div class="col-lg-5">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded-4 shadow-soft" alt="Ilustrasi aktivitas web development di laptop">
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="section-label">Tentang Saya</p>
-                        <h2 class="section-title">Profil Singkat</h2>
-                        <p>
-                            Nama saya <strong>Riski Kurniawan</strong>. Saya memiliki ketertarikan besar pada bidang <mark>Informatika</mark>, khususnya pengembangan website,
-                            perancangan antarmuka, dan pemanfaatan teknologi untuk membantu pekerjaan menjadi lebih efisien. Saya senang mempelajari hal baru secara bertahap,
-                            mulai dari struktur HTML, tampilan CSS, interaksi JavaScript, hingga framework seperti Bootstrap.
-                        </p>
-                        <p>
-                            Selain dunia teknologi, saya juga memiliki wawasan dan pengalaman di lingkungan manufaktur, terutama pada area <u>Quality Control</u>.
-                            Pengalaman tersebut membentuk saya menjadi pribadi yang teliti, disiplin, dan terbiasa mengikuti standar kerja. Bagi saya, kombinasi kemampuan teknis
-                            dan ketelitian proses adalah modal penting untuk menghasilkan karya digital yang berkualitas. <small class="text-muted">Halaman ini dibuat sebagai representasi CV sederhana namun profesional.</small>
-                        </p>
-                        <div class="row g-3 mt-3">
-                            <div class="col-sm-4">
-                                <div class="info-box">
-                                    <h3>Informatika</h3>
-                                    <p>Minat akademik utama</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="info-box">
-                                    <h3>Web Dev</h3>
-                                    <p>HTML, CSS, JS</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="info-box">
-                                    <h3>QC</h3>
-                                    <p>Teliti dan sistematis</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Hero merupakan halaman pembuka utama website kelompok. -->
+        <section class="group-hero d-flex align-items-center text-center">
+            <div class="hero-decoration hero-decoration-one" aria-hidden="true"></div>
+            <div class="hero-decoration hero-decoration-two" aria-hidden="true"></div>
+            <div class="container position-relative">
+                <div class="landing-logo-wrap mx-auto mb-4">
+                    <img src="images/logo-unsia.png" class="landing-logo" alt="Logo UNSIA">
                 </div>
-            </div>
-        </section>
-
-        <!-- Bagian keahlian menggunakan unordered list dan tabel pertama -->
-        <section id="keahlian" class="section-padding">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <p class="section-label">Kompetensi</p>
-                    <h2 class="section-title">Keahlian dan Bidang Minat</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="content-card h-100">
-                            <h3 class="mb-3">Daftar Keahlian</h3>
-                            <ul class="skill-list">
-                                <li>HTML semantic untuk menyusun struktur halaman website.</li>
-                                <li>CSS modern untuk membuat desain responsive dan rapi.</li>
-                                <li>JavaScript dasar untuk menambahkan interaksi halaman.</li>
-                                <li>Bootstrap 5 untuk layout grid, komponen, dan utilitas.</li>
-                                <li>Quality Control untuk pemeriksaan standar kualitas produk manufaktur.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="content-card h-100">
-                            <h3 class="mb-3">Tabel Kemampuan</h3>
-                            <div class="table-responsive">
-                                <table class="table table-hover align-middle">
-                                    <thead>
-                                        <tr>
-                                            <th>Bidang</th>
-                                            <th>Level</th>
-                                            <th>Fokus</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Informatika</td>
-                                            <td>Menengah</td>
-                                            <td>Logika dan pemrograman web</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Web Development</td>
-                                            <td>Menengah</td>
-                                            <td>Frontend dan responsive design</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Quality Control</td>
-                                            <td>Baik</td>
-                                            <td>Inspeksi, standar, dan dokumentasi</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bagian pengalaman menggunakan ordered list dan tabel kedua -->
-        <section id="pengalaman" class="section-padding bg-light">
-            <div class="container">
-                <div class="row g-4 align-items-stretch">
-                    <div class="col-lg-6">
-                        <div class="content-card h-100">
-                            <p class="section-label">Riwayat</p>
-                            <h2 class="section-title">Pengalaman Manufaktur</h2>
-                            <ol class="timeline-list">
-                                <li>Membantu proses pengecekan produk sesuai standar kualitas yang berlaku.</li>
-                                <li>Mencatat hasil pemeriksaan agar data produksi lebih mudah ditelusuri.</li>
-                                <li>Bekerja sama dengan tim produksi untuk menjaga target dan kualitas kerja.</li>
-                                <li>Menerapkan budaya kerja rapi, aman, disiplin, dan bertanggung jawab.</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="content-card h-100">
-                            <h3 class="mb-3">Tabel Pendidikan dan Aktivitas</h3>
-                            <div class="table-responsive">
-                                <table class="table table-striped align-middle">
-                                    <thead>
-                                        <tr>
-                                            <th>Tahun</th>
-                                            <th>Kegiatan</th>
-                                            <th>Keterangan</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2024</td>
-                                            <td>Belajar Web Dasar</td>
-                                            <td>HTML, CSS, dan JavaScript</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2025</td>
-                                            <td>Pengembangan Portfolio</td>
-                                            <td>Membuat halaman CV responsive</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2026</td>
-                                            <td>Penguatan Skill QC</td>
-                                            <td>Ketelitian dan kontrol proses</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bagian portfolio berisi tiga kartu dan gambar pendukung -->
-        <section id="portfolio" class="section-padding">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <p class="section-label">Karya</p>
-                    <h2 class="section-title">Portfolio Pilihan</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <article class="portfolio-card">
-                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Kode program untuk website" class="img-fluid">
-                            <div class="p-4">
-                                <h3>Landing Page</h3>
-                                <p>Mendesain halaman pembuka website dengan Bootstrap grid dan komponen responsive.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="portfolio-card">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80" alt="Aktivitas inspeksi di lingkungan manufaktur" class="img-fluid">
-                            <div class="p-4">
-                                <h3>Quality Control</h3>
-                                <p>Menerapkan ketelitian dalam pemeriksaan produk, pencatatan data, dan evaluasi proses.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="portfolio-card">
-                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80" alt="Diskusi tim untuk proyek digital" class="img-fluid">
-                            <div class="p-4">
-                                <h3>Kolaborasi Tim</h3>
-                                <p>Beradaptasi dengan tim, membagi tugas, dan menjaga komunikasi agar target tercapai.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bagian kontak memuat minimal tiga link internal atau eksternal -->
-        <section id="kontak" class="section-padding contact-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="contact-card text-center">
-                            <p class="section-label text-info">Kontak</p>
-                            <h2 class="section-title text-white">Mari Terhubung</h2>
-                            <p class="text-white-75 mb-4">Silakan gunakan tautan berikut untuk melihat bagian penting halaman ini atau menghubungi saya secara digital.</p>
-                            <div class="d-flex flex-wrap gap-3 justify-content-center">
-                                <a class="btn btn-light" href="mailto:riski.kurniawan@example.com">Email</a>
-                                <a class="btn btn-outline-light" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                                <a class="btn btn-outline-light" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a class="btn btn-outline-info" href="#home">Kembali ke Atas</a>
-                            </div>
-                        </div>
-                    </div>
+                <p class="eyebrow mb-3">UTS Project Based Test</p>
+                <h1 class="group-title mb-3">GROUP <span>10</span></h1>
+                <h2 class="campus-title mb-2">Universitas Siber Asia</h2>
+                <p class="course-title mb-4">Pemrograman Web I</p>
+                <p class="hero-intro mx-auto mb-5">
+                    Selamat datang di website CV kelompok kami. Kenali empat anggota, peran, keahlian,
+                    dan perjalanan belajar kami melalui halaman portfolio masing-masing.
+                </p>
+                <a href="anggota.html" class="btn btn-accent btn-lg rounded-pill px-5 py-3 shadow-soft">
+                    Lihat CV Anggota <span aria-hidden="true">→</span>
+                </a>
+                <div class="landing-meta mt-5">
+                    <span>4 Anggota</span><span class="meta-dot"></span><span>1 Tim</span><span class="meta-dot"></span><span>1 Project</span>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer sederhana sebagai penutup halaman -->
-    <footer class="py-4 text-center bg-dark text-white">
-        <div class="container">
-            <small>&copy; 2026 Riski Kurniawan. Dibuat untuk UTS Pemrograman Web I.</small>
-        </div>
+    <footer class="landing-footer text-center">
+        <small>&copy; 2026 GROUP 10 — Universitas Siber Asia. Dibuat untuk keperluan akademik.</small>
     </footer>
 
-    <!-- Tombol kembali ke atas yang dikontrol JavaScript -->
-    <button id="backToTop" class="back-to-top" type="button" aria-label="Kembali ke atas">↑</button>
-
-    <!-- Bootstrap JavaScript CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- File JavaScript buatan sendiri -->
     <script src="script.js"></script>
 </body>
 </html>
