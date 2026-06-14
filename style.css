@@ -1,7 +1,4 @@
-/* ================================================================
-   SISTEM DESAIN GROUP 10
-   Variabel CSS memudahkan mahasiswa mengganti warna di satu tempat.
-   ================================================================ */
+
 :root {
     --primary: #1d4ed8;
     --primary-dark: #0b1f4d;
@@ -28,7 +25,6 @@ body {
 img { max-width: 100%; }
 a { text-underline-offset: 3px; }
 
-/* Navbar dipakai bersama oleh halaman anggota dan seluruh halaman CV. */
 .glass-nav {
     min-height: 72px;
     background: rgba(7, 25, 65, 0.9);
@@ -56,9 +52,6 @@ a { text-underline-offset: 3px; }
 .btn-accent { color: #172554; background: var(--accent); border: 2px solid var(--accent); font-weight: 700; }
 .btn-accent:hover { color: #fff; background: var(--accent-dark); border-color: var(--accent-dark); transform: translateY(-2px); }
 
-/* ================================================================
-   HALAMAN PEMBUKA
-   ================================================================ */
 .landing-page { min-height: 100vh; background: var(--primary-dark); }
 .group-hero {
     position: relative;
@@ -99,9 +92,6 @@ a { text-underline-offset: 3px; }
 .meta-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
 .landing-footer { padding: 18px; color: rgba(255,255,255,.66); background: #061638; }
 
-/* ================================================================
-   HALAMAN DAFTAR ANGGOTA
-   ================================================================ */
 .member-header {
     padding: 150px 0 92px;
     background: radial-gradient(circle at 50% 0, rgba(56,189,248,.35), transparent 32%), linear-gradient(135deg, #071a42, #164b9d);
@@ -129,9 +119,6 @@ a { text-underline-offset: 3px; }
 .member-card .btn { margin-top: auto; }
 .team-note { padding: 34px; border: 1px solid #dbeafe; border-radius: var(--radius); background: #fff; box-shadow: 0 14px 38px rgba(15,23,42,.07); }
 
-/* ================================================================
-   HALAMAN CV
-   ================================================================ */
 .cv-hero {
     min-height: 100vh;
     padding: 125px 0 80px;
@@ -170,12 +157,10 @@ a { text-underline-offset: 3px; }
 .site-footer { padding: 30px 0; color: #cbd5e1; background: #071630; }
 .site-footer small { color: #94a3b8; }
 
-/* Tombol ini disembunyikan sampai JavaScript menambahkan class .show. */
 .back-to-top { position: fixed; z-index: 1050; right: 22px; bottom: 22px; display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; border-radius: 50%; color: #172554; background: var(--accent); box-shadow: 0 16px 35px rgba(37,99,235,.35); font-size: 1.35rem; font-weight: 800; }
 .back-to-top.show { display: flex; }
 .back-to-top:hover { transform: translateY(-3px); }
 
-/* Aturan responsif: ukuran dan jarak diperkecil pada tablet/HP. */
 @media (max-width: 991.98px) {
     .glass-nav .navbar-collapse { padding: 10px 0 16px; }
     .navbar .nav-link { margin-left: 0; }
@@ -196,7 +181,6 @@ a { text-underline-offset: 3px; }
     .table th, .table td { min-width: 130px; padding: .85rem; }
 }
 
-/* Menghormati pengguna yang memilih pengurangan gerakan pada perangkatnya. */
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
