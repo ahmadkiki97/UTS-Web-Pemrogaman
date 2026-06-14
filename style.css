@@ -166,7 +166,7 @@ a { text-underline-offset: 3px; }
 .back-to-top.show { display: flex; }
 .back-to-top:hover { transform: translateY(-3px); }
 
-/* Aturan responsif: ukuran dan jarak diperkecil pada tablet/HP. */
+/* css untuk reponsifitas*/
 @media (max-width: 991.98px) {
     .glass-nav .navbar-collapse { padding: 10px 0 16px; }
     .navbar .nav-link { margin-left: 0; }
@@ -187,7 +187,7 @@ a { text-underline-offset: 3px; }
     .table th, .table td { min-width: 130px; padding: .85rem; }
 }
 
-/* Menghormati pengguna yang memilih pengurangan gerakan pada perangkatnya. */
+/* fitur untuk mereduce animasi jika device terlalu berat */
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
