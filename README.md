@@ -1,2 +1,4 @@
 # UTS-Web-Pemrogaman
-Ini adalah web CV data diri saya 
+Ini adalah web CV data 
+anggota group 10
+
