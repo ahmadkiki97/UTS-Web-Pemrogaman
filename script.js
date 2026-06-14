@@ -1,7 +1,4 @@
-/* ================================================================
-   INTERAKSI WEBSITE GROUP 10
-   Semua elemen dicek terlebih dahulu agar script aman di tiap halaman.
-   ================================================================ */
+
 const backToTopButton = document.getElementById('backToTop');
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarCollapse = document.getElementById('menuCV');
